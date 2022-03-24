@@ -1,0 +1,11 @@
+.shop-container{
+    position: relative;
+}
+.order{
+    position: sticky;
+    top: 0rem;
+    right: 0rem;
+    height: 100vh;
+
+
+}
