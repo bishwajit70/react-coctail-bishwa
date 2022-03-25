@@ -17,6 +17,12 @@ const Shop = () => {
         setOrders(newOrders);
     }
 
+    const [orderDetails, setOrderDetails]=useState([])
+    const handleDetail =(details)=>{
+        const newOrderDetails = [...orderDetails, details]
+        setOrderDetails(newOrderDetails)
+    }
+
 
     return (
         <div className='container shop-container pt-3'>
@@ -28,6 +34,7 @@ const Shop = () => {
                                 key={cocktail.idDrink}
                                 cocktail={cocktail}
                                 handleOrder={handleOrder}
+                                handleDetail={handleDetail}
 
                             ></SingleCocktail>)
                         }
