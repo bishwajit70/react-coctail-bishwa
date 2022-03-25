@@ -12,7 +12,7 @@ const ReactModal = (props) => {
     return (
         <div>
             <>
-                <Button variant="primary" onClick={handleShow}>
+                <Button variant="warning" className='fw-bold' onClick={handleShow}>
                     Details
                 </Button>
 
@@ -26,7 +26,6 @@ const ReactModal = (props) => {
                         <Button variant="secondary" onClick={handleClose}>
                             Close
                         </Button>
-
                     </Modal.Footer>
                 </Modal>
             </>

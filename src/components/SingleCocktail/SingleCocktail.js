@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import ReactModal from '../ReactModal/ReactModal';
+import './SingleCocktail.css'
 
 const SingleCocktail = (props) => {
     // console.log(props)
@@ -20,13 +21,10 @@ const SingleCocktail = (props) => {
                     <Card.Title>{strAlcoholic}</Card.Title>
                     <Card.Title>{strGlass}</Card.Title>
                     <Card.Text>{strInstructions.slice(0, 50)}</Card.Text>
-
                 </Card.Body>
-                <Card.Footer>
+                <Card.Footer className='footer-btn'>
                     <Button onClick={() => handleOrder(cocktail)} className='fw-bold' variant="warning">Have A Drink</Button>
-                    {/* <Button onClick={() => handleDetail(cocktail)} className='fw-bold' variant="warning">Drink Details</Button> */}
                     <ReactModal details={cocktail}></ReactModal>
-
                 </Card.Footer>
             </Card>
         </div>
